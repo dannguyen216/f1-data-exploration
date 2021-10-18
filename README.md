@@ -11,7 +11,10 @@ The primary goal of this project is to gain experience working with larger sets 
 \
 The various ``.csv`` files that make up the dataset were imported using Microsoft SQL Server Management Studio, so note that various SQL commands will not line up with other RDBMS.
 
-2. __``mclaren_hybrid_era.ipynb``__:
-After getting acclimated with the dataset using SQL, this file explores the data using the Pandas library in Python with a specific focus on the McLaren Formula 1 team from the years 2014-2021. The Jupyter Notebook file takes a high-level look at the team's results throughout the years to see how the team has developed. Along with joining different dataframes and aggregating the data to note McLaren's average performance, the Matplotlib library (and to a lesser extent, the Seaborn library) was used to help visualize the data so that trends can be more clearly observed.\
+2. __``mclaren_hybrid_era.ipynb``__: After getting acclimated with the dataset using SQL, this file explores the data using the Pandas library in Python with a specific focus on the McLaren Formula 1 team from the years 2014-2021. The Jupyter Notebook file takes a high-level look at the team's results throughout the years to see how the team has developed. Along with joining different dataframes and aggregating the data to note McLaren's average performance, the Matplotlib library (and to a lesser extent, the Seaborn library) was used to help visualize the data so that trends can be more clearly observed. \
+\
+The Python code in the file was written using __Python 3.9.7__.
+
+3. __``exploring_lap_times.ipynb``__: This is a supplementary Jupyter Notebook file that I used to look into some discrepancies that I noticed in some of the recorded lap times, specifically those caused by races stopped by red flags. Other than the observations, the notebook also goes through the process of identifying outliers by calculating the z-score. By removing the inflated lap times, we can get a better estimate of average lap times for use in ``mclaren_hybrid_era.ipynb``. \
 \
 The Python code in the file was written using __Python 3.9.7__.

@@ -115,7 +115,7 @@ LEFT JOIN
 ON listYears.year = numPodium.year
 GROUP BY listYears.year
 
--- Average lap time for all drivers in each race (on or after 2014)
+-- Average lap time for all drivers in each race (2014 - 2021)
 SELECT l.raceId,  CONVERT(time, DATEADD(ms, AVG(CAST(l.milliseconds as float)), 0)) as average_lap_time,
 AVG(CAST(l.milliseconds as float)) as 'average_lap_time (ms)'
 FROM formula_one..lap_times as l JOIN formula_one..results as r
